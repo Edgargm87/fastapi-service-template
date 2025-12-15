@@ -17,9 +17,7 @@ class Settings(BaseSettings):
     
     # Orígenes CORS permitidos (string separada por comas o '*')
     cors_allow_origins: str = "*"   # por defecto: todos (desarrollo)
-    
-    # Orígenes CORS permitidos (string separada por comas o '*')
-    cors_allow_origins: str = "*"   # por defecto: todos (desarrollo)
+
 
     class Config:
         env_file = ".env"
