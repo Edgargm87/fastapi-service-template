@@ -14,6 +14,12 @@ class Settings(BaseSettings):
     secret_key: str
     database_url: str = "sqlite:///./service.db"
     access_token_expire_minutes: int = 30
+    
+    # Orígenes CORS permitidos (string separada por comas o '*')
+    cors_allow_origins: str = "*"   # por defecto: todos (desarrollo)
+    
+    # Orígenes CORS permitidos (string separada por comas o '*')
+    cors_allow_origins: str = "*"   # por defecto: todos (desarrollo)
 
     class Config:
         env_file = ".env"
